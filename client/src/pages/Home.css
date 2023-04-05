@@ -1,0 +1,126 @@
+
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Header section styles */
+.doctor-image {
+	background-image: url("https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGhhcHB5JTIwZmFtaWx5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+	/* background-repeat: no-repeat; */
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.doctor-image h2 {
+	font-size: 3em;
+	margin-bottom: 1em;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+
+.doctor-image p {
+	font-size: 1.2em;
+	margin-bottom: 2em;
+	color: #c8ef08;
+	text-shadow: 1px 1px #000;
+}
+
+.doctor-image button {
+	background-color: #fff;
+	color: #333;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+/* Content section styles */
+.content {
+	padding: 5em 0;
+}
+
+.content h1 {
+	font-size: 2.5em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.content p {
+	font-size: 1.2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.content img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 2em;
+}
+
+.content button {
+	background-color: #3fa9f5;
+	color: #fff;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 0 10px;
+	}
+	
+	.doctor-image {
+		height: auto;
+		padding-top: 100px;
+	}
+	
+	.doctor-image h2 {
+		font-size: 2.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.doctor-image p {
+		font-size: 1em;
+		margin-bottom: 1.5em;
+	}
+	
+	.doctor-image button {
+		font-size: 1em;
+		padding: 0.8em 1.5em;
+	}
+	
+	.content h1 {
+		font-size: 2em;
+		margin-bottom: 0.5em;
+	}
+	
+	.content p {
+		font-size: 1em;
+		margin-bottom: 1.5em;
+	}
+	
+	.content img {
+		margin-bottom: 1.5em;
+	}
+	
+	.content button {
+		font-size: 1em;
+		padding: 0.8em 1.5em;
+	}
+}

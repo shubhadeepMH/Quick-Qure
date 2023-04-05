@@ -1,0 +1,325 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.body-content{
+  margin: 1rem;
+}
+
+    /* Registration page */
+
+.reg-container{
+border-radius: 1rem;
+ min-width: 40vw;
+ max-width: 80vw;
+  margin: auto;
+  text-align: center;
+  margin-top: 18vh;
+  /* width: 50%; */
+  background-image: linear-gradient(rgb(251, 164, 170),rgb(201, 201, 251));
+}
+.reg-container div input{
+  width: 95%;
+  margin-left: 1vw;
+}
+.reg-container p Link{
+  color: rgb(86, 86, 247);
+  margin-left: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.reg-container h6{
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+.btn{
+  height: 2.2rem;
+}
+.main{
+  padding: 1%;
+}
+.header{
+  min-width: 100vw;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+  /* Sidebar Menu( Navigation Menu ) */
+
+.profile-ntf{
+  margin-right: 1.5rem;
+  margin-top: .5rem;
+  /* background-color: aqua; */
+  text-align: right;
+}
+.profile-ntf i{
+  margin-right: 2.5rem;
+  cursor: pointer;
+}
+
+.profile-ntf a {
+  margin-right: .5rem;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+}
+.profile-ntf a img:hover{
+  box-shadow: 2px 1px 5px black;
+}
+.sidebar-menu i{
+  
+ margin: 1rem;
+ color: rgb(19, 12, 12);
+}
+.header h2{
+  text-align: center;
+  margin: auto;
+
+}
+.logo{
+  text-align: center;
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu-item{
+  margin-top: 15px;
+  display: flex;
+  text-decoration: none;
+  margin-left: 1rem;
+  
+  
+}
+ 
+
+
+.menu-item:hover{
+  box-shadow: 1px 2px 5px rgb(243, 231, 231);
+  border-radius: 1rem;
+  background-color: rgb(12, 10, 6);
+  color: rgb(175, 159, 159);
+}
+.menu-item p{
+  margin-top: .60rem;
+  color: rgb(228, 219, 219);
+  font-size: medium;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.menu-item .logout-text{
+  margin-top: .89rem;
+}
+.menu-item i{
+  color: green;
+  padding: .3rem; 
+  cursor: pointer;
+
+}
+.active{
+  /* background-color: rgb(248, 239, 186); */
+  box-shadow: 2px 1px 2px rgb(243, 246, 243);
+  background-color: rgb(20, 20, 19);
+  color: rgb(10, 11, 11);
+  border-radius: 1rem;
+}
+
+
+/* Apply as Doctor(Apply Doctor) */
+.apply-doctor-main{
+  margin: 1rem 3rem;
+}
+.apply-doctor-body{
+  margin: 2rem;
+}
+.apply-doctor-body .heading{
+ font-size: large;
+}
+.apply-doctor-body Form {
+  margin-top: 2rem;
+}
+
+.apply-doctor-body  Form p{
+  font-family: sans-serif;
+  font-size: large;
+}
+.apply-doctor-body .personnel-detail {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+ 
+ 
+}
+  /* Notification page */
+.notification-main{
+  margin: 2rem;
+}
+.notification-main h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.notification-main hr{
+  max-width: 16%;
+}
+.button-container{
+  display: flex;
+  justify-content: right;
+}
+.notification-container button{
+top: 0px;
+height: 2rem;
+max-width: 8rem;
+z-index: 2;
+background-color: rgb(226, 7, 7);
+color: white;
+border: none;
+/* border-radius: 1rem; */
+box-shadow: 2px 2px 2px black;
+}
+
+.notifications{
+  z-index: 0;
+
+ 
+  
+}
+.notifications ul a{
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+  /* All doctos list page */
+  .users-main{
+   margin: .9rem;
+  }
+  .users-main .heading{
+    font-style: italic;
+  }
+  .users-main table thead{
+    background-color: rgb(34, 79, 34);
+    color: antiquewhite;
+    font-size: larger;
+  }
+  .doctors-main table thead{
+    background-color: rgb(34, 79, 34);
+    color: antiquewhite;
+    font-size: larger;
+  }
+ 
+  .doctors-main{
+    margin: .9rem;
+  }
+
+  /* Profile page */
+  .profile-body{
+    margin: 1rem;
+  }
+
+  /* Doctor list page */
+
+  .doclist-main{
+    margin: .9rem;
+  }
+  .doclist-body{
+    margin: 1rem;
+  }
+  .doclist-body-list{
+    
+    grid-template-rows: auto auto auto;
+    
+  }
+ /* Doctor profile card */
+  .card-header {
+    background-color: rgb(34, 79, 34);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  /* Styling for the card content */
+  .card-content {
+    padding: 20px;
+  }
+
+  /* Styling for the data fields */
+  .data-field {
+    margin-bottom: 10px;
+  }
+
+  .data-label {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+  }
+
+  .data-value {
+    display: inline-block;
+  }
+  .doclist-body-row{
+    margin-top: 1rem;
+  }
+  .avail-body{
+    margin: 1rem;
+  }
+
+  .avail-body .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    width: 80vw;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .avail-body .card-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .avail-body .card-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .avail-body .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .avail-body .field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .avail-body label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .avail-body  span {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .available{
+    color:rgb(18, 115, 18);
+  }
+  .not-available{
+    color:rgb(248, 66, 66);
+  }
+  .table-body{
+    margin: 1rem;
+  }
+  
+
+@media (max-width:500px){
+  .apply-doctor-body .personnel-detail {
+    display: block;
+  }
+}
+
+

@@ -1,0 +1,113 @@
+
+  
+  .navbar {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    background-color: #170d0d;
+    /* color: #333; */
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    z-index: 3;
+  }
+  
+  .logo a {
+    color: #67d339;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .menu li {
+    list-style: none;
+    z-index: 3;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  .menu li a:hover {
+    background-color: #555;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media screen and (max-width: 830px) {
+    .menu {
+      display: none;
+      z-index: 1;
+    }
+    
+    .menu-icon {
+      display: block;
+    }
+    
+    .menu-icon .navicon {
+      background: #fff;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 18px;
+    }
+    
+    .menu-icon .navicon:before,
+    .menu-icon .navicon:after {
+      background: #fff;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+    }
+    
+    .menu-icon .navicon:before {
+      top: 5px;
+    }
+    
+    .menu-icon .navicon:after {
+      top: -5px;
+    }
+    
+    #menu-btn:checked ~ .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      z-index: 1;
+    }
+    
+    #menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+    
+    #menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+    
+    #menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+  }
+  
