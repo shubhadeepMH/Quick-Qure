@@ -8,7 +8,7 @@ const appoinment = require('./db/appoinmentSchema')
 const cors = require('cors')
 const { findOne } = require('./db/userSchema')
 const moment = require('moment')
-const path=require('path')
+// const path=require('path')
 
 //dotenv config
 dotenv.config()
@@ -21,10 +21,10 @@ const app = express();
 app.use(express.json())
 app.use(cors())
 
-//static files
-app.use(express.static(path.join(__dirname,'./client/build')))
+// static files
+app.use(express.static(path.join(__dirname,'./Build/dist')))
 app.get('*',(req,res)=>{
-res.sendFile(path.join(__dirname,'./client/build/index.html'))
+res.sendFile(path.join(__dirname,'./client/Build/index.html'))
 })
 
 //Routes
