@@ -8,7 +8,7 @@ const appoinment = require('./db/appoinmentSchema')
 const cors = require('cors')
 const { findOne } = require('./db/userSchema')
 const moment = require('moment')
-// const path=require('path')
+const path=require('path')
 
 //dotenv config
 dotenv.config()
