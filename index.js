@@ -22,10 +22,10 @@ app.use(express.json())
 app.use(cors())
 
 // static files
-// app.use(express.static(path.join(__dirname,'./Build/dist')))
-// app.get('*',(req,res)=>{
-// res.sendFile(path.join(__dirname,'./client/Build/index.html'))
-// })
+app.use(express.static(path.join(__dirname,'./Build/dist')))
+app.get('*',(req,res)=>{
+res.sendFile(path.join(__dirname,'./client/Build/index.html'))
+})
 
 //Routes
 
